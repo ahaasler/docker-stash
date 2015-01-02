@@ -86,14 +86,24 @@ If security is important follow the Atlassian recommendation:
 
 1. Create the data-only container and set proper permissions:
 
-	```bash
-	docker run --name stash-data -v /data/stash busybox true
-	docker run --rm -it --volumes-from stash-data debian bash
-	```
-	The last command will open a *debian* container. Execute this inside that container:
-	```bash
-	chown 782:root /data/stash; chmod 770 /data/stash; exit;
-	```
+	* **Lazy way (preferred)** - Using [docker-stash-data](https://github.com/ahaasler/docker-stash-data "A data-only container for docker-stash"):
+
+		```bash
+docker run --name stash-data ahaasler/stash-data
+		```
+
+	* *I-wan't-to-know-what-I'm-doing* way:
+
+		```bash
+docker run --name stash-data -v /data/stash busybox true
+docker run --rm -it --volumes-from stash-data debian bash
+		```
+
+		The last command will open a *debian* container. Execute this inside that container:
+
+		```bash
+chown 782:root /data/stash; chmod 770 /data/stash; exit;
+		```
 
 2. Use it in the stash container:
 
