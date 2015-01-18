@@ -1,6 +1,6 @@
 # docker-stash
 
-Builds a Docker image for Stash.
+A Docker image for Stash.
 
 ## Features
 
@@ -111,9 +111,34 @@ chown 782:root /data/stash; chmod 770 /data/stash; exit;
 docker run --name stash --volumes-from stash-data -d -p 7990:7990 -p 7999:7999 ahaasler/stash
 	```
 
+### PostgreSQL external database
+
+A great way to connect your Stash instance with a PostgreSQL database is
+using the [docker-stash-postgres](https://github.com/ahaasler/docker-stash-postgres "A PostgreSQL container for docker-stash")
+image.
+
+1. Create and name the database container:
+
+	```bash
+docker run --name stash-postgres -d ahaasler/stash-postgres
+	```
+
+2. Use it in the Stash container:
+
+	```bash
+docker run --name stash --link stash-postgres:stash-postgres -d -p 7990:7990 -p 7999:7999 ahaasler/stash
+	```
+
+3. Connect your Stash instance following the Atlassian documentation:
+[Connecting Stash to PostgreSQL](https://confluence.atlassian.com/display/STASH/Connecting+Stash+to+PostgreSQL#ConnectingStashtoPostgreSQL-ConnectStashtothePostgreSQLdatabase "Connecting Stash to PostgreSQL").
+
+>  See [docker-stash-postgres](https://github.com/ahaasler/docker-stash-postgres "A PostgreSQL container for docker-stash")
+for more information an configuration options.
+
 ## Thanks
 
 * [Docker](https://www.docker.com/ "Docker") for this amazing container engine.
+* [PostgreSQL](http://www.postgresql.org/) for this advanced database.
 * [Atlassian](https://www.atlassian.com/ "Atlassian") for making great products. Also for their work on [atlassian-docker](https://bitbucket.org/atlassianlabs/atlassian-docker "atlassian-docker repo") which inspired this.
 * [Azul Systems](http://www.azulsystems.com/ "Azul Systems") for their *OpenJDK* docker base image.
 * And specially to you and the entire community.
