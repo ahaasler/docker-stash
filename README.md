@@ -1,6 +1,6 @@
 # docker-stash: A Docker image for Stash.
 
-[![Release](https://img.shields.io/github/tag/ahaasler/docker-stash.svg?style=flat&label=release)](https://github.com/ahaasler/docker-stash/releases)
+[![Release](https://img.shields.io/github/release/ahaasler/docker-stash.svg?style=flat)](https://github.com/ahaasler/docker-stash/releases/latest)
 
 ## Features
 
