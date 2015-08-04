@@ -3,7 +3,7 @@ MAINTAINER Adrian Haasler García <dev@adrianhaasler.com>
 
 # Configuration
 ENV STASH_HOME /data/stash
-ENV STASH_VERSION 3.7.1
+ENV STASH_VERSION 3.7.2
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
