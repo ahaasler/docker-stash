@@ -1,5 +1,6 @@
 # docker-stash: A Docker image for Stash.
 
+[![Docker Repository on Quay.io](https://quay.io/repository/ahaasler/stash/status "Docker Repository on Quay.io")](https://quay.io/repository/ahaasler/stash)
 [![Release](https://img.shields.io/github/release/ahaasler/docker-stash.svg?style=flat)](https://github.com/ahaasler/docker-stash/releases/latest)
 
 ## Features
