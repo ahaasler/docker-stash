@@ -3,6 +3,8 @@
 [![Build status](https://travis-ci.org/ahaasler/docker-stash.svg?branch=master)](https://travis-ci.org/ahaasler/docker-stash)
 [![Docker Repository on Quay.io](https://quay.io/repository/ahaasler/stash/status "Docker Repository on Quay.io")](https://quay.io/repository/ahaasler/stash)
 [![Release](https://img.shields.io/github/release/ahaasler/docker-stash.svg?style=flat)](https://github.com/ahaasler/docker-stash/releases/latest)
+[![Docker Stars](https://img.shields.io/docker/stars/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
 
 ## Features
 
