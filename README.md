@@ -5,6 +5,7 @@
 [![Release](https://img.shields.io/github/release/ahaasler/docker-stash.svg?style=flat)](https://github.com/ahaasler/docker-stash/releases/latest)
 [![Docker Stars](https://img.shields.io/docker/stars/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
+[![Image Size](https://img.shields.io/imagelayers/image-size/ahaasler/stash/latest.svg?style=flat)](https://imagelayers.io/?images=ahaasler/stash:latest)
 
 ## Features
 
