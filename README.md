@@ -4,7 +4,7 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/ahaasler/stash/status "Docker Repository on Quay.io")](https://quay.io/repository/ahaasler/stash)
 [![Release](https://img.shields.io/github/release/ahaasler/docker-stash.svg?style=flat)](https://github.com/ahaasler/docker-stash/releases/latest)
 [![Docker Stars](https://img.shields.io/docker/stars/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ahaasler/stash.svg?style=flat)](https://hub.docker.com/r/ahaasler/stash/) [![](https://images.microbadger.com/badges/image/ahaasler/stash.svg)](https://microbadger.com/images/ahaasler/stash "Get your own image badge on microbadger.com")
 [![Image Size](https://img.shields.io/imagelayers/image-size/ahaasler/stash/latest.svg?style=flat)](https://imagelayers.io/?images=ahaasler/stash:latest)
 
 ## Features
@@ -151,3 +151,4 @@ for more information an configuration options.
 ## License
 
 This image is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
+ 
